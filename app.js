@@ -34,6 +34,10 @@ async function fetchUpgrades() {
 
   upgrades.forEach(function (upgrade) {
     console.log(upgrade.id, upgrade.name, upgrade.cost, upgrade.increase);
+    let shopItem = document.createElement("div");
+    const name = document.createElement("p");
+    const cost = document.createElement("p");
+    const increase = document.createElement("p");
   });
 }
 fetchUpgrades();
