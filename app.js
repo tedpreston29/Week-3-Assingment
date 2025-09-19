@@ -34,16 +34,32 @@ async function fetchUpgrades() {
 
   upgrades.forEach(function (upgrade) {
     console.log(upgrade.id, upgrade.name, upgrade.cost, upgrade.increase);
+
     let shopItem = document.createElement("div");
     shopItem.classList.add("upgrade-item");
+
     const name = document.createElement("p");
-    const cost = document.createElement("p");
-    const increase = document.createElement("p");
-    const buyBtn = document.createElement("button");
     name.textContent = upgrade.name;
+
+    const cost = document.createElement("p");
     cost.textContent = "Price: " + upgrade.cost;
+
+    const increase = document.createElement("p");
     increase.textContent = "Increase Yield: " + upgrade.increase;
+
+    const buyBtn = document.createElement("button");
     buyBtn.textContent = "Purchase Upgrade";
+
+    buyBtn.addEventListener("click", function () {
+      if (state.cookieCount >= upgrade.cost) {
+        state.cookieCount -= upgrade.cost;
+        state.cps += upgrade.increase;
+        console.log("Upgrade Purchased: " + upgrade.name);
+      } else {
+        alert("INSUFFICIENT COOKIES! keep on a-clickin'");
+      }
+    });
+
     shopItem.appendChild(buyBtn);
     shopItem.appendChild(name);
     shopItem.appendChild(cost);

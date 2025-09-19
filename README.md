@@ -20,5 +20,8 @@ Brain stopped working and struggled to get new shop item elemtents on screen. To
 
 19/09/2025
 got the shop items displayed on screen using my forEach loop, document.createElement and appendChild. Also added a button to each using the same type of method.
+Added shopItem.classList.add to give each upgrade the ability to be indivually styled if
 
 I will add button functionality next to increase and decrease the the cps and cookieCount based on user interaction... Wish me luck connor...
+
+Added the upgrade button functionality, this was easier than I thought. I still had to google things becasue I would often get the syntax mixed around and it wouldn't work. My biggest issue on these assignments is trying to remember the syntax of things and then how to link for example, a function to another function or other variables. I couldn't write it off the top of my head I dont think. I can explain each section and what they are for but sometimes I can't see what they actually do if that makes sense?
