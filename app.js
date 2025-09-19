@@ -35,9 +35,20 @@ async function fetchUpgrades() {
   upgrades.forEach(function (upgrade) {
     console.log(upgrade.id, upgrade.name, upgrade.cost, upgrade.increase);
     let shopItem = document.createElement("div");
+    shopItem.classList.add("upgrade-item");
     const name = document.createElement("p");
     const cost = document.createElement("p");
     const increase = document.createElement("p");
+    const buyBtn = document.createElement("button");
+    name.textContent = upgrade.name;
+    cost.textContent = "Price: " + upgrade.cost;
+    increase.textContent = "Increase Yield: " + upgrade.increase;
+    buyBtn.textContent = "Purchase Upgrade";
+    shopItem.appendChild(buyBtn);
+    shopItem.appendChild(name);
+    shopItem.appendChild(cost);
+    shopItem.appendChild(increase);
+    shopUpgrades.appendChild(shopItem);
   });
 }
 fetchUpgrades();
