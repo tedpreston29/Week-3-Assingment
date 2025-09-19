@@ -24,4 +24,8 @@ Added shopItem.classList.add to give each upgrade the ability to be indivually s
 
 I will add button functionality next to increase and decrease the the cps and cookieCount based on user interaction... Wish me luck connor...
 
-Added the upgrade button functionality, this was easier than I thought. I still had to google things becasue I would often get the syntax mixed around and it wouldn't work. My biggest issue on these assignments is trying to remember the syntax of things and then how to link for example, a function to another function or other variables. I couldn't write it off the top of my head I dont think. I can explain each section and what they are for but sometimes I can't see what they actually do if that makes sense?
+Added the upgrade button functionality, this was easier than I thought. I still had to google things becasue I would often get the syntax mixed around and it wouldn't work. I was going to add a seperate eventListener for each button but I had a google and could put them all together inside one by an if else statement and using the state object alongside my forEach function
+
+My biggest issue on these assignments is trying to remember the syntax of things and then how to link for example, a function to another function or other variables. I couldn't write it off the top of my head I dont think. I can explain each section and what they are for but sometimes I can't see what they actually do if that makes sense?
+
+Adding styling next. I want to group cookie image and cookie count together so that when positioning they will be linked.
