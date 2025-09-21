@@ -36,3 +36,5 @@ Added animation to the cookie so when clicking it will scale down and on mouse u
 added colours to to each container.
 
 I realised I had been styling while zoomed out 60% so now I am having to restyle everything for 100%
+
+Added background image. I initally added an image and hit save and it threw all my positioning everywhere and wouldn't go back to how I had it. I also organised my CSS a bit more by having the containers only for sizing and then used the sub divs for the flair.
