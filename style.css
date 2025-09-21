@@ -1,22 +1,53 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: monospace;
+  margin: 0;
+}
+
+#backgroundImage img {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#cookie img {
+  height: 250px;
+  width: auto;
+  animation: spin 4s linear infinite;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#cookie img:active {
+  transform: scale(5);
 }
 
 #cookieAndCount {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   position: relative;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  left: 4.5%;
-  top: 10%;
-  text-align: center;
-}
-
-#cookie img {
-  height: 500px;
-  width: auto;
+  top: 22vh;
+  width: 35%;
+  left: 15%;
+  border: 15px ridge #724f02;
+  padding: 20px;
+  background-color: rgb(201, 176, 129);
 }
 
 .mainCount {
@@ -24,21 +55,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
-  left: 45px;
-  width: 25%;
+  width: 70%;
+  font-size: 20px;
+  border: 10px ridge #2c1f02;
+  background-color: antiquewhite;
 }
 
 #shop {
-  position: fixed;
-  font-size: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 4px;
-  grid-row-gap: 4px;
-  right: 35%;
-  top: 25px;
+  position: relative;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(4, 1fr);
+  width: 30%;
+  gap: 4px;
+  left: 55vw;
+  bottom: 30vh;
+  font-size: 15px;
 }
 
 .upgrade-item {
@@ -46,13 +78,18 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 5px;
-  border: 5px solid #333;
-  width: 160px;
+  border: 10px ridge #724f02;
+  background-color: rgb(201, 176, 129);
+  width: 100%;
+  height: 100%;
 }
 .upgrade-item button {
   display: flex;
   flex-direction: column;
   order: 3;
-  margin-top: auto;
-  height: 20px;
+  margin-top: 5px;
+  height: 25px;
+  font-size: 15px;
+  background-color: #ca950b;
+  color: rgb(0, 0, 0);
 }

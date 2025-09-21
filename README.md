@@ -18,14 +18,21 @@ Added a forEach loop for the upgrades.
 
 Brain stopped working and struggled to get new shop item elemtents on screen. Tomorrows job I think.
 
-19/09/2025
+19/09/
 got the shop items displayed on screen using my forEach loop, document.createElement and appendChild. Also added a button to each using the same type of method.
 Added shopItem.classList.add to give each upgrade the ability to be indivually styled if
 
-I will add button functionality next to increase and decrease the the cps and cookieCount based on user interaction... Wish me luck connor...
+I will add button functionality next to increase and decrease the the cps and cookieCount based on user interaction
 
 Added the upgrade button functionality, this was easier than I thought. I still had to google things becasue I would often get the syntax mixed around and it wouldn't work. I was going to add a seperate eventListener for each button but I had a google and could put them all together inside one by an if else statement and using the state object alongside my forEach function
 
 My biggest issue on these assignments is trying to remember the syntax of things and then how to link for example, a function to another function or other variables. I couldn't write it off the top of my head I dont think. I can explain each section and what they are for but sometimes I can't see what they actually do if that makes sense?
 
 Adding styling next. I want to group cookie image and cookie count together so that when positioning they will be linked.
+
+21/09
+Added animation to the cookie so when clicking it will scale down and on mouse up it will revert back to normal size. I had to make a new event listener in JS for the scaling as I could not get it to work in css.
+
+added colours to to each container.
+
+I realised I had been styling while zoomed out 60% so now I am having to restyle everything for 100%
