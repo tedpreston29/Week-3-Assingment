@@ -40,4 +40,7 @@ I realised I had been styling while zoomed out 60% so now I am having to restyle
 Added background image. I initally added an image and hit save and it threw all my positioning everywhere and wouldn't go back to how I had it. I also organised my CSS a bit more by having the containers only for sizing and then used the sub divs for the flair.
 
 SUMMARY...
-I really enjoyed this assignment however, I sometimes feel that with my poor working memory due to dyslexia it's hard for me to remember some of the syntax and the structure of some JavaScript executables etc. I did use AI to help me structure them but I understand the concepts and when and why they are used. I would love to have a session again on syntax and the order of things, this is my biggest weakness at the moment.
+I really enjoyed this assignment however, I sometimes feel that with my poor working memory due to dyslexia it's hard for me to remember some of the syntax and the structure of some JavaScript executables etc. I did use AI to help me structure them but I understand the concepts and when and why they are used.
+I would love to have a session again on syntax and the order of things or something similar. This is my biggest weakness at the moment.
+
+I also did not get around to adding in the feature where you can see how many upgrades the user currently has.
